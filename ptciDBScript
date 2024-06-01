@@ -1,0 +1,80 @@
+-- Create student table
+CREATE TABLE student (
+  studentID INT GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) PRIMARY KEY,
+  icNumber VARCHAR(255),
+  studentName VARCHAR(255),
+  emailAddress VARCHAR(255),
+  phoneNumber VARCHAR(255),
+  address VARCHAR(255),
+  username VARCHAR(255),
+  password VARCHAR(255),
+  UNIQUE (icNumber, emailAddress, phoneNumber, username)
+);
+
+-- Insert sample data into student table
+INSERT INTO student (icNumber, studentName, emailAddress, phoneNumber, address, username, password)
+VALUES
+('020122020775', 'John Doe', 'johndoe@example.com', '0195563449', '123 Main St', 'johndoe', 'fun123'),
+('040122070996', 'Jane Smith', 'janesmith@example.com', '0154463884', '456 Elm St', 'janesmith', 'fun123');
+
+-- Create admin table
+CREATE TABLE admin (
+  adminID INT GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) PRIMARY KEY,
+  adminName VARCHAR(255),
+  emailAddress VARCHAR(255),
+  phoneNumber VARCHAR(255),
+  username VARCHAR(255),
+  password VARCHAR(255),
+  UNIQUE (emailAddress, phoneNumber, username)
+);
+
+-- Insert sample data into admin table
+INSERT INTO admin (adminName, emailAddress, phoneNumber, username, password)
+VALUES
+('Admin', 'Admin@example.com', '0153873884', 'admin', 'admin123');
+
+-- Create subject table
+CREATE TABLE subject (
+  subjectCode VARCHAR(255) PRIMARY KEY,
+  subjectName VARCHAR(255),
+  subjectPrice VARCHAR(255)
+);
+
+-- Insert sample data into subject table
+INSERT INTO subject (subjectCode, subjectName, subjectPrice)
+VALUES
+('MATH101', 'Mathematics', '60'),
+('ENG102', 'English', '80');
+
+-- Create parent table
+CREATE TABLE parent (
+  parentName VARCHAR(255) PRIMARY KEY,
+  parentNumber VARCHAR(15),
+  UNIQUE (parentNumber)
+);
+
+-- Insert sample data into parent table
+INSERT INTO parent (parentName, parentNumber)
+VALUES
+('Mary Doe', '0198865868'),
+('Peter Smith', '0138865865');
+
+-- Create payment table
+CREATE TABLE payment (
+  paymentID INT GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) PRIMARY KEY,
+  studentID  INT,
+  form VARCHAR(255),
+  subjectReg VARCHAR(255),
+  month VARCHAR(255),
+  refId VARCHAR(255),
+  paymentDate VARCHAR(255),
+  isPaid VARCHAR(255),
+  UNIQUE (refId),
+  FOREIGN KEY (studentID) REFERENCES student(studentID)
+);
+
+-- Insert sample data into payment table
+INSERT INTO payment (studentID, form, subjectReg, month, refId, paymentDate, isPaid)
+VALUES
+(1, 'Form A', 'MATH101', 'January', 'REF123456', '2024-01-15', 'Yes'),
+(2, 'Form B', 'ENG102', 'February', 'REF654321', '2024-02-20', 'No');

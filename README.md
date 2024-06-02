@@ -59,5 +59,21 @@ The project uses the NetBeans embedded database for data storage.
    • NetBeans Database (Java DB/Derby) 
   
 -- Screenshot
-    Landing Page
+   • Landing Page
   ![landing page](https://github.com/FahmiRazak02/PTCI/assets/171445864/12e76b5e-5c44-4762-88c0-f35132cd9d49)
+  • Login
+  ![login](https://github.com/FahmiRazak02/PTCI/assets/171445864/2906acb8-e056-43f9-8517-9eba9490f8be)
+  • Register
+  ![register](https://github.com/FahmiRazak02/PTCI/assets/171445864/b2e52e36-213d-43f7-afdc-6d3dae744dd2)
+  • Student Homepage
+  ![student homepage](https://github.com/FahmiRazak02/PTCI/assets/171445864/b76409d7-7084-4c65-9264-4873f53de4f0)
+  • Register Subject  
+  ![register subject](https://github.com/FahmiRazak02/PTCI/assets/171445864/7a3a1222-8ae3-4af4-b344-20004476d6f0)
+  • Admin Page
+  ![admin](https://github.com/FahmiRazak02/PTCI/assets/171445864/3c5a08a5-5dff-4496-9361-08c6db1b8a05)
+  • Manage Studentt
+  ![student management](https://github.com/FahmiRazak02/PTCI/assets/171445864/03de1efa-d03b-44fe-914d-007537c99907)
+  • Manage Subject
+  ![subject management](https://github.com/FahmiRazak02/PTCI/assets/171445864/c8e77759-1d79-41a3-bb4f-3e36c46db03c)
+  • Validate Payment
+  ![validate payment](https://github.com/FahmiRazak02/PTCI/assets/171445864/592aa980-1865-4b53-90af-56a645180067)

@@ -1,7 +1,8 @@
 Pusat Tuition Cikgu Ibrahim Management System
 
 The Pusat Tuition Cikgu Ibrahim Management System is a Java-based application developed using NetBeans IDE 8.2 and JDK 8u111.
-It is designed to manage the operations of a tuition center, including student records, class schedules, and fee management. 
+It is designed to manage the operations of a tuition center, including student records management, subject management, payment validation and 
+it will also allow student to make subject registration and make payment. 
 The project uses the NetBeans embedded database for data storage.
 
 -- Installation Instructions

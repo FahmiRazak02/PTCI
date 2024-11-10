@@ -1,18 +1,63 @@
-Pusat Tuition Cikgu Ibrahim Management System
+# Pusat Tuition Cikgu Ibrahim Management System
+A Java-based application developed in NetBeans, designed to manage operations at a tuition center, including student records, subject registration, payment validation, and administration of class offerings.
 
-The Pusat Tuition Cikgu Ibrahim Management System is a Java-based application developed using NetBeans IDE 8.2 and JDK 8u111.
-It is designed to manage the operations of a tuition center, including student records management, subject management, payment validation and 
-it will also allow student to make subject registration and make payment. 
-The project uses the NetBeans embedded database for data storage.
+##Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Screenshot](#screenshot)
+  
+## Features
+1.   **Student Management**:
+      -Register new students and maintain student information within the system.
+     
+2.   **Subject Management**:
+      -add, view, and manage subject offerings, allowing students to select and register for classes.
+     
+3.   **Payment Validation**:
+      -Track and validate student payments for registered classes.
+     
+4.   **Registration and Enrollment**:
+      -Students can register for new subjects and complete payments through the system.
 
--- Installation Instructions
+5.   **Admin Management**:
+      -Manage student records, subject offerings, payment validation, and new admin registrations.
 
--- Prerequisites
+## Tech Stack
 
-- Java JDK 8u111
-- NetBeans IDE 8.2
+- **Java**: JDK 8u111
+- **JNetBeans IDE**: 8.2
+- **Database**: NetBeans Embedded Database (Java DB/Derby)
 
---- Steps to Set Up the Project Locally
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/slmsystem.git
+   cd slmsystem
+   ```
+
+2. Set up the database:
+   - Configure MySQL with a new database and update the connection details in `src/main/resources/application.properties`.
+
+3. Build and run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. Open a browser and go to `http://localhost:8080` to access the application.
+
+
+## Installation
+
+1.   Prerequisites
+      -Java JDK 8u111
+      -NetBeans IDE 8.2
+
+     
+## Steps to Set Up the Project Locally
 
 1. *Clone the Repository*
    ```bash
@@ -36,30 +81,52 @@ The project uses the NetBeans embedded database for data storage.
     • The database connection should already be configured in the project.
     • Ensure the connection settings match your local setup.
     
---- Usage Instructions
+##Usage Instructions
 
-1.  Run the Project
+1.  **Run the Project**
   • Open the project in NetBeans.
   • Ensure that the Java DB server is running.
   • Right-click on the project in the Projects pane and select Run.
   
-  2.  Using the Application
+  2.  **Using the Application**
   • For Student Login
     • Go to login page
     • insert username: johndoe & password: "fun123"
     • Click "Register Now" and use it to register class and make payment
+
   • For Admin Login
     • Choose "admin" at login as button
     • insert username: admin & password: "admin123"
     • Use the admin page to manage student, subject management, validate payment and new admin singup
+    
+## Default Credential
+      **Student Login**:
+      -Username: johndoe
+      -Password: fun123
+      
+      **Admin Login**:
+      -Username: admin
+      -Password: admin123
+      
 
---- Technologies Used
+## Usage
 
-   • Java
-   • NetBeans IDE 8.2
-   • NetBeans Database (Java DB/Derby) 
-  
--- Screenshot
+**Student Functions**:
+   -Class Registration: Students can view available subjects and register.
+   -Payment: Make payments for registered subjects.
+   -Admin Functions:
+
+**Manage Students**: Add or edit student records.
+   -Subject Management: Update subject listings.
+   -Payment Validation: Approve or review student payments.
+
+## License
+
+This project is licensed under the UITM.
+
+---
+
+Screenshot
 
    • Landing Page
   ![landing page](https://github.com/FahmiRazak02/PTCI/assets/171445864/12e76b5e-5c44-4762-88c0-f35132cd9d49)
